@@ -18,7 +18,7 @@ componentWillUnmount(){
 render() {
     return (
       <>
-        <h1 style={margin}>The Time is: {this.state.time.toLocaleTimeString()}</h1>
+        <h1 style={margin}>The Local Time is: {this.state.time.toLocaleTimeString()}</h1>
       </>
     );
   }

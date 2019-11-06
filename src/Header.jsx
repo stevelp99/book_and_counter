@@ -6,6 +6,7 @@ const container={
     flexDirection:"row",
 }
 const image={
+    marginLeft:30,
     width:50,
     height:"auto"
 }

@@ -5,7 +5,7 @@ const margin={
 export default class Clock extends Component{
     constructor(){
     super();
-    this.state ={time:new Date()};
+    this.state={time:new Date()};
 }
 componentDidMount(){
     this.clockInterval=setInterval(()=>{
@@ -15,10 +15,10 @@ componentDidMount(){
 componentWillUnmount(){
     clearInterval(this.clockInterval);
 }
-render() {
+render(){
     return (
       <>
-        <h1 style={margin}>The Time is: {this.state.time.toLocaleTimeString()}</h1>
+        <h1 style={margin}>The Local Time is: {this.state.time.toLocaleTimeString()}</h1>
       </>
     );
   }
