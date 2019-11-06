@@ -13,13 +13,13 @@ const background={
 function App() {
   return (
     <>
-    <div style={background}>
-    <Header/>
-</div>
-<div>
-  <Router/>
-</div>
-</>
+      <div style={background}>
+        <Header/>
+      </div>
+      <div>
+        <Router/>
+      </div>
+    </>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />

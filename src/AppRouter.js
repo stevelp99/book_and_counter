@@ -1,5 +1,4 @@
 import React from "react";
-
 import HomePage from "./pages/HomePage";
 import LatestBooksPage from "./pages/LatestBooksPage";
 import PageNotFound from "./pages/PageNotFound";
@@ -10,7 +9,6 @@ import Clock from "./pages/Clock";
 import Timer from "./pages/Timer";
 import Alarm from "./pages/Alarm";
 import World from "./pages/World";
-
 const header ={
     display: "flex",
     flexDirection: "row",
@@ -22,11 +20,9 @@ const space={
 const linkSpace={
     textDecoration:"none"
 }
-
 export default function AppRouter(){
     return(
     <Router>
-        
         <ul style={header}>
             <li style={space}><Link style={linkSpace} to="/">Home</Link></li>
             <li style={space}><Link style={linkSpace}to="/latest">Latest Novels</Link></li>
@@ -36,7 +32,6 @@ export default function AppRouter(){
             <li style={space}><Link style={linkSpace}to="alarm">Alarm</Link></li>
             <li style={space}><Link style={linkSpace}to="world">World Clock</Link></li>
         </ul>
-
         <Switch>
             <Route exact path="/">
                 <HomePage />
