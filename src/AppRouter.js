@@ -14,10 +14,13 @@ import World from "./pages/World";
 const header ={
     display: "flex",
     flexDirection: "row",
-    listStyleType: "none",
+    listStyleType: "none"
 }
 const space={
     margin:5
+}
+const linkSpace={
+    textDecoration:"none"
 }
 
 export default function AppRouter(){
@@ -25,13 +28,13 @@ export default function AppRouter(){
     <Router>
         
         <ul style={header}>
-            <li style={space}><Link to="/">Home</Link></li>
-            <li style={space}><Link to="/latest">Latest Novels</Link></li>
-            <li style={space}><Link to="counter">Counter</Link></li>
-            <li style={space}><Link to="clock">Clock</Link></li>
-            <li style={space}><Link to="timer">Timer</Link></li>
-            <li style={space}><Link to="alarm">Alarm</Link></li>
-            <li style={space}><Link to="world">World Clock</Link></li>
+            <li style={space}><Link style={linkSpace} to="/">Home</Link></li>
+            <li style={space}><Link style={linkSpace}to="/latest">Latest Novels</Link></li>
+            <li style={space}><Link style={linkSpace}to="counter">Counter</Link></li>
+            <li style={space}><Link style={linkSpace}to="clock">Clock</Link></li>
+            <li style={space}><Link style={linkSpace}to="timer">Timer</Link></li>
+            <li style={space}><Link style={linkSpace}to="alarm">Alarm</Link></li>
+            <li style={space}><Link style={linkSpace}to="world">World Clock</Link></li>
         </ul>
 
         <Switch>

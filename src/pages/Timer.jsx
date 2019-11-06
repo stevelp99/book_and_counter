@@ -6,7 +6,7 @@ const margin={
 
 export default class Timer extends Component{
     state={
-        min: 1,
+        min: 2,
         sec: 0,
     }
     componentDidMount(){
@@ -38,7 +38,7 @@ export default class Timer extends Component{
             <div style={margin}>
                  {min===0&&sec===0
                     ? <h1>Timer complete</h1>
-                    : <h1>Time Remaining:{min}:{sec < 10 ? `0${sec}`:sec}</h1>
+                    : <h1>Time Remaining:{min}:{sec}</h1>
                 }
             </div>
         )
