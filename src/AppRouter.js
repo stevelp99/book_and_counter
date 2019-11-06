@@ -8,6 +8,8 @@ import Books from "./pages/Books";
 import Counter from "./pages/Counter";
 import Clock from "./pages/Clock";
 import Timer from "./pages/Timer";
+import Alarm from "./pages/Alarm";
+import World from "./pages/World";
 
 const header ={
     display: "flex",
@@ -28,6 +30,8 @@ export default function AppRouter(){
             <li style={space}><Link to="counter">Counter</Link></li>
             <li style={space}><Link to="clock">Clock</Link></li>
             <li style={space}><Link to="timer">Timer</Link></li>
+            <li style={space}><Link to="alarm">Alarm</Link></li>
+            <li style={space}><Link to="world">World Clock</Link></li>
         </ul>
 
         <Switch>
@@ -48,6 +52,12 @@ export default function AppRouter(){
             </Route>
             <Route exact path="/timer">
                 <Timer/>
+            </Route>
+            <Route exact path="/alarm">
+                <Alarm/>
+            </Route>
+            <Route exact path="/world">
+                <World/>
             </Route>
             <Route>
                 <PageNotFound />

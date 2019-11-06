@@ -36,7 +36,7 @@ export default class Timer extends Component{
         const{min,sec} =this.state
         return(
             <div style={margin}>
-                if {min===0&&sec===0
+                 {min===0&&sec===0
                     ? <h1>Timer complete</h1>
                     : <h1>Time Remaining:{min}:{sec < 10 ? `0${sec}`:sec}</h1>
                 }
