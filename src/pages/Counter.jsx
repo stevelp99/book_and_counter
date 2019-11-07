@@ -41,9 +41,7 @@ class counter extends React.Component{
             <Button variant="primary" onClick={this.decrease} style={buttonMargin}className="counter">-</Button>
                 <h2 style={align}>{this.state.count}</h2>
             </div>
-            
             </>
-            
         );
     }
 }
