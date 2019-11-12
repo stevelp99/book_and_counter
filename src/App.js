@@ -7,6 +7,7 @@ import Router from "./AppRouter";
 // import Header from './Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 const background={
   backgroundColor:"grey"
 }
@@ -18,6 +19,9 @@ function App() {
       </div>
       <div>
         <Router/>
+      </div>
+      <div>
+        
       </div>
     </>
     // <div className="App">

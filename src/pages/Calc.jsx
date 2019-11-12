@@ -1,33 +1,34 @@
-
-import React, {Component} from 'react';
+import React,{Component} from 'react';
 
 const title={
     margin:40
   }
 
-class Calc extends Component {
+
+class Pad extends Component {
     render() {
         return (
             <div style={title} className="button">
-                <button name="1" onClick={e => this.props.onClick(e.value)}>1</button>
-                <button name="2" onClick={e => this.props.onClick(e.value)}>2</button>
-                <button name="3" onClick={e => this.props.onClick(e.value)}>3</button>
-                <button name="+" onClick={e => this.props.onClick(e.value)}>+</button>
+                <button id="1" onClick={e => this.handleClick(e)}>1</button>
+                <button id="2" onClick={e => this.handleClick(e)}>2</button>
+                <button id="3" onClick={e => this.handleClick(e)}>3</button>
+                <button id="+" onClick={e => this.handleClick(e)}>+</button>
                 <div/>
-                <button name="4" onClick={e => this.props.onClick(e.value)}>4</button>
-                <button name="5" onClick={e => this.props.onClick(e.value)}>5</button>
-                <button name="6" onClick={e => this.props.onClick(e.value)}>6</button>
-                <button name="-" onClick={e => this.props.onClick(e.value)}>-</button>
+                <button id="4" onClick={e => this.handleClick(e)}>4</button>
+                <button id="5" onClick={e => this.handleClick(e)}>5</button>
+                <button id="6" onClick={e => this.handleClick(e)}>6</button>
+                <button id="-" onClick={e => this.handleClick(e)}>-</button>
                 <div/>
-                <button name="7" onClick={e => this.props.onClick(e.value)}>7</button>
-                <button name="8" onClick={e => this.props.onClick(e.value)}>8</button>
-                <button name="9" onClick={e => this.props.onClick(e.value)}>9</button>
-                <button name="=" onClick={e => this.props.onClick(e.value)}>=</button>
+                <button id="7" onClick={e => this.handleClick(e)}>7</button>
+                <button id="8" onClick={e => this.handleClick(e)}>8</button>
+                <button id="9" onClick={e => this.handleClick(e)}>9</button>
+                <button id="=" onClick={e => this.handleClick(e)}>=</button>
                 <div/>
-                <button name="0" onClick={e => this.props.onClick(e.value)}>0</button>
+                <button id="0" onClick={e => this.handleClick(e)}>0</button>
                 <div/>
             </div>
         );
     }
 }
-export default Calc;
+
+export default Pad;

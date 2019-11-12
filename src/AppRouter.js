@@ -10,6 +10,7 @@ import Timer from "./pages/Timer";
 import Alarm from "./pages/Alarm";
 import World from "./pages/World";
 import Calc from "./pages/Calc";
+import Form from "./pages/Form";
 const header ={
     display: "flex",
     flexDirection: "row",
@@ -32,7 +33,8 @@ export default function AppRouter(){
             <li style={space}><Link style={linkSpace}to="timer">Timer</Link></li>
             <li style={space}><Link style={linkSpace}to="alarm">Alarm</Link></li>
             <li style={space}><Link style={linkSpace}to="world">World Clock</Link></li>
-            <li style={space}><Link style={linkSpace}to="calc">Calculator</Link></li>
+            <li style={space}><Link style={linkSpace}to="pad">Calculator</Link></li>
+            <li style={space}><Link style={linkSpace}to="form">Form</Link></li>
         </ul>
         <Switch>
             <Route exact path="/">
@@ -59,8 +61,11 @@ export default function AppRouter(){
             <Route exact path="/world">
                 <World/>
             </Route>
-            <Route exact path="/calc">
+            <Route exact path="/pad">
                 <Calc/>
+            </Route>
+            <Route exact path="/form">
+                <Form/>
             </Route>
             <Route>
                 <PageNotFound />
